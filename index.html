@@ -103,6 +103,18 @@
             padding: 1.5rem;
             margin-bottom: 2rem;
         }
+        @media (max-width: 768px) {
+            .publication-tabs {
+                flex-wrap: wrap;           /* Allow wrapping to multiple lines */
+                justify-content: flex-start; /* Align to the left */
+                gap: 0.5rem;               /* Add spacing between buttons */
+            }
+
+            .tab-button {
+                flex: 1 1 auto;            /* Allow the buttons to grow/shrink */
+                text-align: center;        /* Center the text inside buttons */
+            }
+}
     </style>
 
 
@@ -133,6 +145,8 @@
                         / <a href="My_Resume.pdf"><i class="ai ai-cv"></i></a>
                         / <a href="https://scholar.google.com/citations?user=7R8dnlUAAAAJ&hl=en"><i
                                 class="ai ai-google-scholar"></i></a>
+                        / <a href="https://www.instagram.com/perfectly_imperfect_muggle/">
+                            <i class="fab fa-instagram"></i>
                 </span>
             </div>
             <div class="one columns">&nbsp;</div>
