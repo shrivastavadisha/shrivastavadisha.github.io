@@ -3,11 +3,11 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158959089-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-158959089-1');
+    gtag('config', 'UA-158959089-1');
 </script>
 
 <head>
@@ -16,9 +16,10 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
     <title>Disha Shrivastava</title>
-    <meta name="description" content="PhD student in Machine Learning at Mila, Montreal">
+    <meta name="description" content="Senior Research Scientist at Google DeepMind, London">
     <meta name="author" content="Disha Shrivastava">
-    <meta name="keywords" content="disha shrivastava, disha, shrivastava, mila">
+    <meta name="keywords"
+        content="disha shrivastava, disha, shrivastava, gdm, google, deepmind, gemini, mila, ai, agents">
 
     <!-- Mobile Specific Metas
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -29,7 +30,7 @@
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Vollkorn" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        xintegrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 
 
@@ -40,246 +41,438 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://use.typekit.net/qks0rmn.css">
 
+    <!-- Custom Styles for Publication Tabs -->
+    <style>
+        h5 {
+            margin-bottom: 1rem;
+        }
+
+        .publication-tabs {
+            display: flex;
+            border-bottom: 1px solid #e1e1e1;
+            margin-top: 0.1rem;
+            margin-bottom: 1.5rem;
+            overflow-x: auto;
+            /* Hide scrollbar for webkit browsers */
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+        .publication-tabs::-webkit-scrollbar {
+            display: none;
+        }
+
+        .tab-button {
+            font-family: 'Raleway', sans-serif;
+            font-size: 17px;
+            font-weight: 500;
+            padding: 6px 14px;
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -1px;
+            transition: color 0.2s, border-color 0.2s;
+            white-space: nowrap;
+            color: #555;
+            text-transform: none; /* Changed from uppercase */
+            letter-spacing: 0.5px;
+        }
+
+        .tab-button:hover {
+            color: #000;
+            background-color: #f9f9f9;
+        }
+
+        .tab-button.active-tab {
+            color: #000; /* Darker text */
+            font-weight: 600;
+            border-bottom-color: #33C3F0; /* Existing blue underline */
+            background-color: #f2f9fc; /* Light background for contrast */
+            border-radius: 4px 4px 0 0; /* Rounded top corners for clarity */
+        }
+
+
+        .tab-content {
+            display: none;
+        }
+
+        .publication {
+            background-color: transparent; /* Changed from grey fill */
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="img/favicon-32x32.jpg" sizes="32x32"/>
-    <link rel="icon" type="image/png" href="img/favicon-16x16.jpg" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="img/disha_latest.jpg" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/disha_latest.jpg" sizes="16x16" />
 
 
 </head>
+
 <body>
 
-<!-- Primary Page Layout
+    <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="container">
-    <div class="row" style="margin-top: 8%">
-        <div class="three columns sidebar">
-            <img class="headshot" src="img/headshot.jpg">
-            <h4 class="avatar-title">Disha Shrivastava</h4>
-            <span><a href="mailto:dishu.905@gmail.com"><font color="#0000FF">dishu.905@gmail.com</font></a></span>
-            <span> <a href="https://twitter.com/DishaShrivasta9"<i class="fab fa-twitter"></i> <a/>
-                / <a href="https://github.com/shrivastavadisha"> <i class="fab fa-github"></i> </a>
-                / <a href="https://www.linkedin.com/in/disha-shrivastava-8398a212/"> <i class="fab fa-linkedin"></i> </a>
-                / <a href="My_Resume.pdf"><i class="ai ai-cv"></i></a>
-                / <a href="https://scholar.google.com/citations?user=7R8dnlUAAAAJ&hl=en"><i
-                        class="ai ai-google-scholar"></i></a>
-            </span>
-        </div>
-        <div class="one columns">&nbsp;</div>
-        <div class="eight columns intro">
-            <p>Hello everyone! I am Disha Shrivastava, a Research Scientist at <a href="https://deepmind.google/">Google DeepMind</a>, London. 
-                My research focuses on enhancing the coding capability of large-scale generative models. In particular, I am interested in improving the ability of the model to iteratively refine its predictions and effectively leverage relevant context from execution, API usage and local repository.
+    <div class="container">
+        <div class="row" style="margin-top: 8%">
+            <div class="three columns sidebar">
+                <img class="headshot" src="img/disha_latest.jpg">
+                <h4 class="avatar-title">Disha Shrivastava</h4>
+                <span><a href="mailto:dishu.905@gmail.com">
+                        <font color="#0000FF">dishu.905@gmail.com</font>
+                    </a></span>
+                <span> <a href="https://twitter.com/DishaShrivasta9" <i class="fab fa-twitter"></i> <a />
+                        / <a href="https://github.com/shrivastavadisha"> <i class="fab fa-github"></i> </a>
+                        / <a href="https://www.linkedin.com/in/disha-shrivastava-8398a212/"> <i
+                                class="fab fa-linkedin"></i> </a>
+                        / <a href="My_Resume.pdf"><i class="ai ai-cv"></i></a>
+                        / <a href="https://scholar.google.com/citations?user=7R8dnlUAAAAJ&hl=en"><i
+                                class="ai ai-google-scholar"></i></a>
+                </span>
+            </div>
+            <div class="one columns">&nbsp;</div>
+            <div class="eight columns intro">
+                <p>Hello everyone! I am Disha Shrivastava, a Senior Research Scientist at <a
+                        href="https://deepmind.google/">Google DeepMind</a>, London.
+                    I am a core-contributor to the <a href="https://deepmind.google/models/gemini/">
+                        <font color="#0000FF">Gemini</font>
+                    </a> project focused on boosting its coding and reasoning abilities through post-training recipes,
+                    data, and evals. In addition, I am actively developing general-purpose agents designed to achieve
+                    superhuman performance in critical environments for humanity. Notably, I played a key role in
+                    developing <a href="https://jules.google/">
+                        <font color="#0000FF">Jules</font></a>, an asynchronous coding agent. My interests also extend to designing better human-agent interfaces.</p>
+                <p>I did my PhD in AI at <a href="https://mila.quebec/en/">Mila</a>, working with <a
+                        href="https://mila.quebec/en/person/hugo-larochelle/">
+                        <font color="#0000FF">Hugo Larochelle</font>
+                    </a> and <a href="https://mila.quebec/en/person/danny-tarlow/">
+                        <font color="#0000FF">Danny Tarlow</font>
+                    </a>. My thesis focused on developing novel methods to identify and leverage contextual cues to
+                    improve deep learning models of code.
+                    During my PhD, I also worked as a Student Researcher at <a href="https://research.google/">Google
+                        Brain</a>, as a Research Scientist Intern at <a href="https://deepmind.google/">DeepMind</a>
+                    working on <a
+                        href="https://storage.googleapis.com/deepmind-media/AlphaCode2/AlphaCode2_Tech_Report.pdf">
+                        <font color="#0000FF">AlphaCode</font></a>, and as a Visiting Researcher at <a href="https://www.servicenow.com/research/">ServiceNow
+                        Research</a>.</p>
+                <p> Before my PhD, I was a Research Software Engineer at <a
+                        href="https://www.research.ibm.com/labs/india/">IBM Research, India </a> where I worked on
+                    unsupervised knowledge graph construction, computational creativity metrics, and reasoning for maths
+                    question-answering. I hold a Masters in Computer Technology from <a
+                        href="http://www.iitd.ac.in/">IIT Delhi</a>, where I developed a data and model-parallel
+                    framework for training of deep networks in Apache Spark. My Bachelors degree is in Electronics and
+                    Communication Engineering from <a href="https://www.bitmesra.ac.in/">BIT Mesra</a>.</p>
+                <p>I co-organized workshops on <a href="https://dl4c.github.io/">
+                        <font color="#0000FF">Deep Learning for Code</font>
+                    </a> (ICLR 2022-23), <a href="https://aiplans.github.io/">
+                        <font color="#0000FF">AIPLANS</font>
+                    </a> (NeurIPS 2021) and <a href="https://nesygems.github.io/">
+                        <font color="#0000FF">Neurosymbolic Generative Models</font>
+                    </a> (ICLR 2023). Outside of work, I like <a
+                        href="https://www.instagram.com/perfectly_imperfect_muggle/">travelling</a>, cooking, reading
+                    books, singing and <a
+                        href="https://musingsofadreamydetective.wordpress.com/author/dishu905/">blogging</a>!</p>
+
+                <h5> Selected Publications</h5>
+                <!-- Tab Navigation -->
+                <div class="publication-tabs">
+                    <button class="tab-button" onclick="openTab(event, 'llms')">LLMs</button>
+                    <button class="tab-button" onclick="openTab(event, 'dl-for-code')">Deep Learning for Code</button>
+                    <button class="tab-button" onclick="openTab(event, 'hci')">HCI</button>
+                    <button class="tab-button" onclick="openTab(event, 'miscellaneous')">Miscellaneous</button>
+                    <button class="tab-button" onclick="openTab(event, 'thesis')">Thesis</button>                       
+                </div>
+
+                 <!-- Tab Content for LLMs -->
+                 <div id="llms" class="tab-content">
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/gemini.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="https://arxiv.org/abs/2312.11805">Gemini: A Family of Highly Capable Multimodal Models</a></span>
+                            <a href="https://arxiv.org/abs/2312.11805"><font color="#0000FF">[Gemini 1]</font></a>
+                            <a href="https://arxiv.org/abs/2403.05530"><font color="#0000FF">[Gemini 1.5]</font></a>
+                            <a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_v2_5_report.pdf"><font color="#0000FF">[Gemini 2.5]</font></a>
+                            <div class="pub-authors"><span class="fw6">Gemini Team</span></div>
+                            <span class="pub-venue">Technical Report</span>
+                        </div>
+                    </div>
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/self_correct.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="https://arxiv.org/abs/2409.12917">Training Language Models to Self-Correct via Reinforcement Learning</a></span>
+                            <div class="pub-authors">Aviral Kumar, Vincent Zhuang, Rishabh Agarwal, Yi Su, John D Co-Reyes,
+                                Avi Singh, Kate Baumli, Shariq Iqbal, Colton Bishop, Rebecca Roelofs, Lei M Zhang, Kay
+                                McKinney, <span class="fw6">Disha Shrivastava</span>, Cosmin Paduraru, George Tucker, Doina Precup, Feryal Behbahani,
+                                Aleksandra Faust
+                            </div>
+                            <span class="pub-venue">ICLR, 2025</span>
+                        </div>
+                    </div>
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/repofusion.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="https://arxiv.org/abs/2306.10998">RepoFusion: Training Code Models to Understand Your Repository</a></span>
+                            <a href="https://huggingface.co/datasets/RepoFusion/Stack-Repo"><font color="#0000FF">[Dataset]</font></a>
+                            <a href="https://github.com/ServiceNow/RepoFusion"><font color="#0000FF">[Code]</font></a>
+                            <a href="https://huggingface.co/RepoFusion/trained_checkpoints"><font color="#0000FF">[Trained Checkpoints]</font></a>
+                            <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Denis Kocetkov, Harm de
+                                Vries, Dzmitry Bahdanau, Torsten Scholak
+                            </div>
+                            <span class="pub-venue">Preprint, 2023</span>
+                        </div>
+                    </div>
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/repo_level_prompt_generation.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="https://arxiv.org/abs/2206.12839">Repository-Level Prompt Generation for Large Language Models of Code</a></span>
+                            <a href="https://github.com/shrivastavadisha/repo_level_prompt_generation"><font color="#0000FF">[Code]</font></a>
+                            <a href="KRLM_ICML_2022_Poster.pdf"><font color="#0000FF">[Poster]</font></a>
+                            <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Hugo Larochelle, Daniel
+                                Tarlow
+                            </div>
+                            <span class="pub-venue">ICML, 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Content for Deep Learning for Code -->
+                <div id="dl-for-code" class="tab-content">
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/n-peps_block_diagram.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a
+                                    href="https://papers.nips.cc/paper/2021/hash/30d411fdc0e6daf092a74354094359bb-Abstract.html">Learning to Combine Per-Example Solutions for Neural Program Synthesis</a></span>
+                            <a href="https://github.com/shrivastavadisha/N-PEPS"><font color="#0000FF">[Code and Trained Checkpoints]</font></a>
+                            <a
+                                href="https://slideslive.com/38967871/learning-to-combine-perexample-solutions-for-neural-program-synthesis?ref=speaker-19624"><font color="#0000FF">[Talk]</font></a>
+                            <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Hugo Larochelle, Daniel
+                                Tarlow
+                            </div>
+                            <span class="pub-venue">NeurIPS, 2021</span>
+                        </div>
+                    </div>
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/tssa.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="CAP_NeurIPS_2020_Paper.pdf">On-the-Fly Adaptation of Source Code Models</a></span>
+                            <a href="CAP_NeurIPS_2020_Poster.pdf"><font color="#0000FF">[Poster]</font></a>
+                            <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Hugo Larochelle, Daniel
+                                Tarlow
+                            </div>
+                            <span class="pub-venue">NeurIPS Workshop on Computer-Assisted Programming, 2020</span>
+                        </div>
+                    </div>
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/repo_level_prompt_generation.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="https://arxiv.org/abs/2206.12839">Repository-Level Prompt Generation for Large Language Models of Code</a></span>
+                            <a href="https://github.com/shrivastavadisha/repo_level_prompt_generation"><font color="#0000FF">[Code]</font></a>
+                            <a href="KRLM_ICML_2022_Poster.pdf"><font color="#0000FF">[Poster]</font></a>
+                            <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Hugo Larochelle, Daniel
+                                Tarlow
+                            </div>
+                            <span class="pub-venue">ICML, 2023</span>
+                        </div>
+                    </div>
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/repofusion.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="https://arxiv.org/abs/2306.10998">RepoFusion: Training Code Models to Understand Your Repository</a></span>
+                            <a href="https://huggingface.co/datasets/RepoFusion/Stack-Repo"><font color="#0000FF">[Dataset]</font></a>
+                            <a href="https://github.com/ServiceNow/RepoFusion"><font color="#0000FF">[Code]</font></a>
+                            <a href="https://huggingface.co/RepoFusion/trained_checkpoints"><font color="#0000FF">[Trained Checkpoints]</font></a>
+                            <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Denis Kocetkov, Harm de
+                                Vries, Dzmitry Bahdanau, Torsten Scholak
+                            </div>
+                            <span class="pub-venue">Preprint, 2023</span>
+                        </div>
+                    </div>
+                </div>
                 
-            <p>I completed my PhD in Machine Learning at <a href="https://mila.quebec/en/">Mila</a>, working with 
-                <a href="https://mila.quebec/en/person/hugo-larochelle/"><font color="#0000FF">Hugo Larochelle</font></a> and <a href="https://mila.quebec/en/person/danny-tarlow/">
-                <font color="#0000FF">Danny Tarlow</font></a>. As part of my thesis, I developed methods to identify relevant contextual cues and effectively leverage the selected cues for aiding deep learning models of code. 
-                During my PhD, I also worked as a Student Researcher at <a href="https://research.google/">Google Brain</a>, as a Research Scientist Intern at <a href="https://deepmind.google/">DeepMind</a>, and as a Visiting Researcher at <a href="https://www.servicenow.com/research/">ServiceNow Research</a>.
-
-            <p>Prior to starting my PhD, I worked at <a href="https://www.research.ibm.com/labs/india/">IBM Research, India </a> as a Research Software Engineer. My work focussed on unsupervised construction of knowledge graphs, metrics for computational creativity and topical coherence, and reasoning for maths question-answering. I graduated from <a href="http://www.iitd.ac.in/">IIT Delhi</a> with a Masters in Computer Technology where I developed a data and model-parallel framework for training of deep networks in Apache Spark. I hold a Bachelors degree in Electronics and Communication Engineering from <a href="https://www.bitmesra.ac.in/">BIT Mesra</a>.
-
-            <p>I co-organized the <a href="https://dl4c.github.io/"><font color="#0000FF">Deep Learning for Code Workshops</font></a> at ICLR 2022-23, 
-                <a href="https://aiplans.github.io/"><font color="#0000FF">AIPLANS Workshop</font></a> at NeurIPS 2021 and  
-                <a href="https://nesygems.github.io/"><font color="#0000FF">Neurosymbolic Generative Models</font></a> at ICLR 2023.
-                When I am not teaching machines how to code, I like <a href="https://www.instagram.com/perfectly_imperfect_muggle/">travelling to explore nature</a>, 
-                cooking, reading books, singing and <a href="https://musingsofadreamydetective.wordpress.com/author/dishu905/">blogging</a>! 
-
-            </p>
-            </p>
-            </p>
-
-            <h5>Publications</h5>
-            <hr/>
-
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/thesis.png">
+                <!-- Tab Content for HCI -->
+                <div id="hci" class="tab-content">
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/dis.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="https://dl.acm.org/doi/abs/10.1145/3643834.3660692">Do LLMs Meet the Needs of Software Tutorial Writers? Opportunities and Design Implications</a></span>
+                            <div class="pub-authors">Avinash Bhat, <span class="fw6">Disha Shrivastava</span>, Jin L.C. Guo </div>
+                            <span class="pub-venue">DIS, 2024</span>
+                        </div>
+                    </div>
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/chi.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="https://dl.acm.org/doi/full/10.1145/3613904.3642697">A Design Space for Intelligent and Interactive Writing Assistants</a></span>
+                            <div class="pub-authors">Mina Lee, Katy Ilonka Gero, John Joon Young Chung, Simon Buckingham
+                                Shum, Vipul Raheja, Hua Shen, Subhashini Venugopalan, Thiemo Wambsganss, David Zhou,
+                                Emad A Alghamdi, Tal August, Avinash Bhat, Madiha Zahrah Choksi, Senjuti Dutta, Jin LC
+                                Guo, Md Naimul Hoque, Yewon Kim, Simon Knight, Seyed Parsa Neshaei, Antonette Shibani,
+                                <span class="fw6">Disha Shrivastava</span>, Lila Shroff, Agnia Sergeyuk, Jessi Stark,
+                                Sarah Sterman, Sitong Wang, Antoine Bosselut, Daniel Buschek, Joseph Chee Chang, Sherol
+                                Chen, Max Kreminski, Joonsuk Park, Roy Pea, Eugenia Ha Rim Rho, Zejiang Shen, Pao
+                                Siangliulue</span></div>
+                            <span class="pub-venue">CHI, 2024</span>
+                        </div>
+                    </div>
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/interactions_with_llm.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="https://arxiv.org/abs/2304.02822">Approach Intelligent Writing Assistants Usability with Seven Stages of Action</a></span>
+                            <div class="pub-authors">Avinash Bhat, <span class="fw6">Disha Shrivastava</span>, Jin L.C.
+                                Guo
+                            </div>
+                            <span class="pub-venue">CHI Workshop on Intelligent and Interactive Writing Assistants,
+                                2023</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title"><a href="PhD_Thesis.pdf">Contextual Cues for Deep Learning Models of Code</a></span> 
-                    <a href="Thesis Defense.pdf"> <font color="#0000FF">[Slides]</font></a>
-                    <div class="pub-authors"><span class="fw6">Disha Shrivastava</span></div>
-                    <span class="pub-venue">PhD Thesis</span>
+
+                <!-- Tab Content for Thesis -->
+                <div id="thesis" class="tab-content">
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/thesis.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="PhD_Thesis.pdf">Contextual Cues for Deep Learning Models of Code</a></span>
+                            <a href="Thesis Defense.pdf"><font color="#0000FF">[Slides]</font></a>
+                            <div class="pub-authors"><span class="fw6">Disha Shrivastava</span></div>
+                            <span class="pub-venue">PhD Thesis</span>
+                        </div>
+                    </div>
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/proof.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="MTech_Thesis.pdf"> Large Scale Distributed Deep Learning using Apache Spark</a> </span>
+                            <div class="pub-authors"> <span class="fw6">Disha Shrivastava</span>
+                            </div>
+                            <span class="pub-venue">Masters Thesis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Content for Miscellaneous -->
+                <div id="miscellaneous" class="tab-content">
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/typology.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="https://aclanthology.org/2021.findings-acl.106/">Minimax and Neyman-Pearson Meta-Learning for Outlier Languages</a></span>
+                            <a href="https://github.com/rahular/robust-maml"><font color="#0000FF">[Code]</font></a>
+                            <div class="pub-authors">Edoardo Maria Ponti*, Rahul Aralikatte*, <span class="fw6">Disha
+                                    Shrivastava</span>, Siva Reddy, Anders Søgaard
+                            </div>
+                            <span class="pub-venue">Findings of ACL, 2021</span>
+                        </div>
+                    </div>
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/trans_learn.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="https://arxiv.org/abs/1906.03574">Transfer Learning by Modeling a Distribution over Policies</a></span>
+                            <a href="ICML_Workshop_Poster.pdf"><font color="#0000FF">[Poster]</font></a>
+                            <div class="pub-authors"><span class="fw6">Disha Shrivastava*</span>, Eeshan Gunesh
+                                Dhekane*, Riashat Islam
+                            </div>
+                            <span class="pub-venue">ICML Workshop on Multi-Task and Lifelong Reinforcement Learning,
+                                2019</span>
+                        </div>
+                    </div>
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/creativity.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="https://arxiv.org/abs/1707.05499">A Machine Learning Approach for Evaluating Creative Artifacts</a></span>
+                            <a href="ML4Creativity_Poster.pdf"><font color="#0000FF">[Poster]</font></a>
+                            <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Saneem Ahmed CG,
+                                Anirban Laha, Karthik Sankaranarayanan
+                            </div>
+                            <span class="pub-venue">SIGKDD Workshop on Machine Learning for Creativity, 2017</span>
+                        </div>
+                    </div>
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/fwd_pass.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="https://arxiv.org/abs/1708.05840">A Data and Model-Parallel, Distributed and Scalable Framework for Training of Deep Networks in Apache Spark</a></span>
+                            <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Santanu Chaudhury, Dr.
+                                Jayadeva
+                            </div>
+                            <span class="pub-venue">arXiv, 2017</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/repofusion.png">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title"><a href="https://arxiv.org/abs/2306.10998">RepoFusion: Training Code Models to Understand Your Repository</a></span> 
-                    <a href="https://huggingface.co/datasets/RepoFusion/Stack-Repo"> <font color="#0000FF">[Dataset]</font></a>
-                    <a href="https://github.com/ServiceNow/RepoFusion"> <font color="#0000FF">[Code]</font></a>
-                    <a href="https://huggingface.co/RepoFusion/trained_checkpoints"> <font color="#0000FF">[Trained Checkpoints]</font></a> 
-                    <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Denis Kocetkov, Harm de Vries, Dzmitry Bahdanau, Torsten Scholak
-                    </div>
-                    <span class="pub-venue">Preprint, 2023</span>
-                </div>
-            </div>
-            
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/repo_level_prompt_generation.png">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title"><a href="https://arxiv.org/abs/2206.12839">Repository-Level Prompt Generation for Large Language Models of Code</a></span> <a href="https://github.com/shrivastavadisha/repo_level_prompt_generation"> <font color="#0000FF">[Code]</font></a> <a href="KRLM_ICML_2022_Poster.pdf"> <font color="#0000FF">[Poster]</font></a>
-                    <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Hugo Larochelle, Daniel Tarlow
-                    </div>
-                    <span class="pub-venue">ICML, 2023</span>
-                </div>
-            </div>
-
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/interactions_with_llm.png">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title"><a href="https://arxiv.org/abs/2304.02822">Approach Intelligent Writing Assistants Usability with Seven Stages of Action</a></span>
-                    <div class="pub-authors">Avinash Bhat, <span class="fw6">Disha Shrivastava</span>, Jin L.C. Guo
-                    </div>
-                    <span class="pub-venue">CHI Workshop on Intelligent and Interactive Writing Assistants, 2023</span>
-                </div>
-            </div>
-
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/N-PEPS_Block_Diagram.png">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title"><a href="https://papers.nips.cc/paper/2021/hash/30d411fdc0e6daf092a74354094359bb-Abstract.html">Learning to Combine Per-Example Solutions for Neural Program Synthesis</a></span> 
-                    <a href="https://github.com/shrivastavadisha/N-PEPS"> <font color="#0000FF">[Code and Trained Checkpoints]</font></a> 
-                    <a href="https://slideslive.com/38967871/learning-to-combine-perexample-solutions-for-neural-program-synthesis?ref=speaker-19624"> <font color="#0000FF">[Talk]</font></a>
-                    <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Hugo Larochelle, Daniel Tarlow
-                    </div>
-                    <span class="pub-venue">NeurIPS, 2021</span>
-                </div>
-            </div>
-
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/typology.png">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title"><a href="https://aclanthology.org/2021.findings-acl.106/">Minimax and Neyman-Pearson Meta-Learning for Outlier Languages</a></span> <a href="https://github.com/rahular/robust-maml"> <font color="#0000FF">[Code]</font></a>
-                    <div class="pub-authors">Edoardo Maria Ponti*, Rahul Aralikatte*, <span class="fw6">Disha Shrivastava</span>, Siva Reddy, Anders Søgaard
-                    </div>
-                    <span class="pub-venue">Findings of ACL, 2021</span>
-                </div>
-            </div>
-
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/TSSA.png">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title"><a href="CAP_NeurIPS_2020_Paper.pdf">On-the-Fly Adaptation of Source Code Models</a></span> <a href="CAP_NeurIPS_2020_Poster.pdf"> <font color="#0000FF">[Poster]</font></a>
-                    <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Hugo Larochelle, Daniel Tarlow
-                    </div>
-                    <span class="pub-venue">NeurIPS Workshop on Computer-Assisted Programming, 2020</span>
-                </div>
-            </div>
-
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/trans_learn.png">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title"><a href="https://arxiv.org/abs/1906.03574">Transfer Learning by Modeling a Distribution over Policies</a></span> <a href="ICML_Workshop_Poster.pdf"> <font color="#0000FF">[Poster]</font></a>
-                    <div class="pub-authors"><span class="fw6">Disha Shrivastava*</span>, Eeshan Gunesh Dhekane*, Riashat Islam
-                    </div>
-                    <span class="pub-venue">ICML Workshop on Multi-Task and Lifelong Reinforcement Learning, 2019</span>
-                </div>
-            </div>
-
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/creativity.png">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title"><a href="https://arxiv.org/abs/1707.05499">A Machine Learning Approach for Evaluating Creative Artifacts</a></span> <a href="ML4Creativity_Poster.pdf"> <font color="#0000FF">[Poster]</font></a>
-                    <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Saneem Ahmed CG, Anirban Laha, Karthik Sankaranarayanan
-                    </div>
-                    <span class="pub-venue">SIGKDD Workshop on Machine Learning for Creativity, 2017</span>
-                </div>
-            </div>
-
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/fwd_pass.png">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title"><a href="https://arxiv.org/abs/1708.05840">A Data and Model-Parallel, Distributed and Scalable Framework for Training of Deep Networks in Apache Spark</a></span>
-                    <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Santanu Chaudhury, Dr. Jayadeva
-                    </div>
-                    <span class="pub-venue">arXiv, 2017</span>
-                </div>
-            </div>
-
-            <!-- <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/sentence_encoding.png">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title">
-                        <a href="https://arxiv.org/abs/1809.00410">Modeling Topical Coherence in Discourse without Supervision
-                    </a> </span>
-                    <div class="pub-authors"> <span class="fw6">Disha Shrivastava</span>, Abhijit Mishra, Karthik Sankaranarayanan
-                    </div>
-                    <span class="pub-venue">arXiv, 2018</span>
-                </div>
-            </div> -->
-
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/comp_creativity_def.png">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title">
-                        <a href="https://ieeexplore.ieee.org/abstract/document/8645678">What is Deemed Computationally Creative?
-                    </a> </span>
-                    <div class="pub-authors"> Shavak Agrawal, Anush Sankaran, Anirban Laha, Saneem Ahmed CG, <span class="fw6">Disha Shrivastava</span>, Karthik Sankaranarayanan
-                    </div>
-                    <span class="pub-venue">IBM Journal of Research and Development, 2019</span>
-                </div>
-            </div>
-
-            <!-- <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/hypernym.png">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title">
-                        <a href="https://arxiv.org/abs/1809.00414">Hypernyms Through Intra-Article Organization in Wikipedia
-                    </a> </span>
-                    <div class="pub-authors"> <span class="fw6">Disha Shrivastava</span>, Sreyash Kenkre, Santosh Penubothula
-                    </div>
-                    <span class="pub-venue">arXiv, 2018</span>
-                </div>
-            </div> -->
-
-            <div class="row publication">
-                <div class="pub-image four columns">
-                    <img src="img/proof.png">
-                </div>
-                <div class="pub-desc eight columns">
-                    <span class="pub-title">
-                        <a href="MTech_Thesis.pdf"> Large Scale Distributed Deep Learning using Apache Spark
-                    </a> </span>
-                    <div class="pub-authors"> <span class="fw6">Disha Shrivastava</span>
-                    </div>
-                    <span class="pub-venue">Masters Thesis</span>
-                </div>
-            </div>
-            <footer class="page-footer font-small blue">
-                    <div class="footer-copyright text-center"> Website template borrowed from <a href="https://ankeshanand.com"> Ankesh Anand</a>.
-                    </div>
-                </footer>
         </div>
     </div>
-</div>
 
-<!-- End Document
+    <!-- JavaScript for Tabs -->
+    <script>
+        function openTab(evt, tabName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tab-content" and hide them
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tab-button" and remove the "active-tab" class
+            tablinks = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-tab");
+            }
+
+            // Show the current tab, and add an "active-tab" class to the button that opened the tab
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.classList.add("active-tab");
+        }
+
+        // Set the first tab as active by default on page load
+        window.onload = function() {
+            // Check if there's at least one tab button before simulating click
+            const firstTabButton = document.querySelector('.tab-button');
+            if (firstTabButton) {
+                firstTabButton.click();
+            }
+        };
+    </script>
+
+    <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+
 </html>
