@@ -63,9 +63,10 @@
 
         .tab-button {
             font-family: 'Raleway', sans-serif;
-            font-size: 17px;
+            font-size: 19px;
             font-weight: 500;
             padding: 6px 14px;
+            margin-right: 12px;
             cursor: pointer;
             border: none;
             background-color: transparent;
@@ -164,8 +165,7 @@
                         href="https://mila.quebec/en/person/hugo-larochelle/">
                         <font color="#0000FF">Hugo Larochelle</font>
                     </a> and <a href="https://mila.quebec/en/person/danny-tarlow/">
-                        <font color="#0000FF">Danny Tarlow</font>
-                    </a>. My thesis focused on developing novel methods to identify and leverage contextual cues to
+                        <font color="#0000FF">Danny Tarlow</font></a>. My thesis focused on developing novel methods to identify and leverage contextual cues to
                     improve deep learning models of code.
                     During my PhD, I also worked as a Student Researcher at <a href="https://research.google/">Google
                         Brain</a>, as a Research Scientist Intern at <a href="https://deepmind.google/">DeepMind</a>
@@ -194,7 +194,6 @@
                 <h5> Selected Publications</h5>
                 <!-- Tab Navigation -->
                 <div class="publication-tabs">
-                    <button class="tab-button" onclick="openTab(event, 'llms')">LLMs</button>
                     <button class="tab-button" onclick="openTab(event, 'dl-for-code')">Deep Learning for Code</button>
                     <button class="tab-button" onclick="openTab(event, 'hci')">HCI</button>
                     <button class="tab-button" onclick="openTab(event, 'miscellaneous')">Miscellaneous</button>
@@ -202,32 +201,19 @@
                 </div>
 
                  <!-- Tab Content for LLMs -->
-                 <div id="llms" class="tab-content">
+                <div id="dl-for-code" class="tab-content">
                     <div class="row publication">
                         <div class="pub-image four columns">
-                            <img src="img/gemini.png">
+                            <img src="img/repo_level_prompt_generation.png">
                         </div>
                         <div class="pub-desc eight columns">
-                            <span class="pub-title"><a href="https://arxiv.org/abs/2312.11805">Gemini: A Family of Highly Capable Multimodal Models</a></span>
-                            <a href="https://arxiv.org/abs/2312.11805"><font color="#0000FF">[Gemini 1]</font></a>
-                            <a href="https://arxiv.org/abs/2403.05530"><font color="#0000FF">[Gemini 1.5]</font></a>
-                            <a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_v2_5_report.pdf"><font color="#0000FF">[Gemini 2.5]</font></a>
-                            <div class="pub-authors"><span class="fw6">Gemini Team</span></div>
-                            <span class="pub-venue">Technical Report</span>
-                        </div>
-                    </div>
-                    <div class="row publication">
-                        <div class="pub-image four columns">
-                            <img src="img/self_correct.png">
-                        </div>
-                        <div class="pub-desc eight columns">
-                            <span class="pub-title"><a href="https://arxiv.org/abs/2409.12917">Training Language Models to Self-Correct via Reinforcement Learning</a></span>
-                            <div class="pub-authors">Aviral Kumar, Vincent Zhuang, Rishabh Agarwal, Yi Su, John D Co-Reyes,
-                                Avi Singh, Kate Baumli, Shariq Iqbal, Colton Bishop, Rebecca Roelofs, Lei M Zhang, Kay
-                                McKinney, <span class="fw6">Disha Shrivastava</span>, Cosmin Paduraru, George Tucker, Doina Precup, Feryal Behbahani,
-                                Aleksandra Faust
+                            <span class="pub-title"><a href="https://arxiv.org/abs/2206.12839">Repository-Level Prompt Generation for Large Language Models of Code</a></span>
+                            <a href="https://github.com/shrivastavadisha/repo_level_prompt_generation"><font color="#0000FF">[Code]</font></a>
+                            <a href="KRLM_ICML_2022_Poster.pdf"><font color="#0000FF">[Poster]</font></a>
+                            <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Hugo Larochelle, Daniel
+                                Tarlow
                             </div>
-                            <span class="pub-venue">ICLR, 2025</span>
+                            <span class="pub-venue">ICML, 2023</span>
                         </div>
                     </div>
                     <div class="row publication">
@@ -245,24 +231,6 @@
                             <span class="pub-venue">Preprint, 2023</span>
                         </div>
                     </div>
-                    <div class="row publication">
-                        <div class="pub-image four columns">
-                            <img src="img/repo_level_prompt_generation.png">
-                        </div>
-                        <div class="pub-desc eight columns">
-                            <span class="pub-title"><a href="https://arxiv.org/abs/2206.12839">Repository-Level Prompt Generation for Large Language Models of Code</a></span>
-                            <a href="https://github.com/shrivastavadisha/repo_level_prompt_generation"><font color="#0000FF">[Code]</font></a>
-                            <a href="KRLM_ICML_2022_Poster.pdf"><font color="#0000FF">[Poster]</font></a>
-                            <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Hugo Larochelle, Daniel
-                                Tarlow
-                            </div>
-                            <span class="pub-venue">ICML, 2023</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tab Content for Deep Learning for Code -->
-                <div id="dl-for-code" class="tab-content">
                     <div class="row publication">
                         <div class="pub-image four columns">
                             <img src="img/N-PEPS_Block_Diagram.png">
@@ -294,34 +262,29 @@
                     </div>
                     <div class="row publication">
                         <div class="pub-image four columns">
-                            <img src="img/repo_level_prompt_generation.png">
+                            <img src="img/alphacode.png">
                         </div>
                         <div class="pub-desc eight columns">
-                            <span class="pub-title"><a href="https://arxiv.org/abs/2206.12839">Repository-Level Prompt Generation for Large Language Models of Code</a></span>
-                            <a href="https://github.com/shrivastavadisha/repo_level_prompt_generation"><font color="#0000FF">[Code]</font></a>
-                            <a href="KRLM_ICML_2022_Poster.pdf"><font color="#0000FF">[Poster]</font></a>
-                            <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Hugo Larochelle, Daniel
-                                Tarlow
-                            </div>
-                            <span class="pub-venue">ICML, 2023</span>
+                            <span class="pub-title"><a href="https://storage.googleapis.com/deepmind-media/AlphaCode2/AlphaCode2_Tech_Report.pdf">AlphaCode2</a></span>
+                            <div class="pub-authors"><span class="fw6">AlphaCode Team</span></div>
+                            <span class="pub-venue">Technical Report, 2023</span>
                         </div>
                     </div>
                     <div class="row publication">
                         <div class="pub-image four columns">
-                            <img src="img/repofusion.png">
+                            <img src="img/self_correct.png">
                         </div>
                         <div class="pub-desc eight columns">
-                            <span class="pub-title"><a href="https://arxiv.org/abs/2306.10998">RepoFusion: Training Code Models to Understand Your Repository</a></span>
-                            <a href="https://huggingface.co/datasets/RepoFusion/Stack-Repo"><font color="#0000FF">[Dataset]</font></a>
-                            <a href="https://github.com/ServiceNow/RepoFusion"><font color="#0000FF">[Code]</font></a>
-                            <a href="https://huggingface.co/RepoFusion/trained_checkpoints"><font color="#0000FF">[Trained Checkpoints]</font></a>
-                            <div class="pub-authors"><span class="fw6">Disha Shrivastava</span>, Denis Kocetkov, Harm de
-                                Vries, Dzmitry Bahdanau, Torsten Scholak
+                            <span class="pub-title"><a href="https://arxiv.org/abs/2409.12917">Training Language Models to Self-Correct via Reinforcement Learning</a></span>
+                            <div class="pub-authors">Aviral Kumar, Vincent Zhuang, Rishabh Agarwal, Yi Su, John D Co-Reyes,
+                                Avi Singh, Kate Baumli, Shariq Iqbal, Colton Bishop, Rebecca Roelofs, Lei M Zhang, Kay
+                                McKinney, <span class="fw6">Disha Shrivastava</span>, Cosmin Paduraru, George Tucker, Doina Precup, Feryal Behbahani,
+                                Aleksandra Faust
                             </div>
-                            <span class="pub-venue">Preprint, 2023</span>
+                            <span class="pub-venue">ICLR, 2025</span>
                         </div>
                     </div>
-                </div>
+                 </div>
                 
                 <!-- Tab Content for HCI -->
                 <div id="hci" class="tab-content">
@@ -395,6 +358,19 @@
 
                 <!-- Tab Content for Miscellaneous -->
                 <div id="miscellaneous" class="tab-content">
+                    <div class="row publication">
+                        <div class="pub-image four columns">
+                            <img src="img/gemini.png">
+                        </div>
+                        <div class="pub-desc eight columns">
+                            <span class="pub-title"><a href="https://arxiv.org/abs/2312.11805">Gemini: A Family of Highly Capable Multimodal Models</a></span>
+                            <a href="https://arxiv.org/abs/2312.11805"><font color="#0000FF">[Gemini 1]</font></a>
+                            <a href="https://arxiv.org/abs/2403.05530"><font color="#0000FF">[Gemini 1.5]</font></a>
+                            <a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_v2_5_report.pdf"><font color="#0000FF">[Gemini 2.5]</font></a>
+                            <div class="pub-authors"><span class="fw6">Gemini Team</span></div>
+                            <span class="pub-venue">Technical Report</span>
+                        </div>
+                    </div>
                     <div class="row publication">
                         <div class="pub-image four columns">
                             <img src="img/typology.png">
